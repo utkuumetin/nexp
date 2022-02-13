@@ -1,0 +1,34 @@
+{
+  "name": "nexp",
+  "version": "1.1.1",
+  "description": "Express style API routing for Next.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "npx tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utkuumetin/nexp.git"
+  },
+  "author": "Utku Metin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/utkuumetin/nexp/issues"
+  },
+  "homepage": "https://github.com/utkuumetin/nexp#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "next": "^11.0.1"
+  }
+}
