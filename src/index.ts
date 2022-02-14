@@ -7,7 +7,7 @@ class nexp {
 
     constructor() {
         this.routerObject = {
-            notFound: function (req, res) {
+            notFound: function (req: NextApiRequest, res: NextApiResponse) {
                 res.send(404);
             }
         };      
@@ -18,8 +18,8 @@ class nexp {
     };
 
     public handler(): handlerFunction{
-        let router = this.routerObject;
-        return function handler(req, res) {
+        const router = this.routerObject;
+        return function handler(req: NextApiRequest, res: NextApiResponse) {
             req.method !== undefined && (router[req.method] ? router[req.method](req, res) : router.notFound(req, res));
         }
     }
